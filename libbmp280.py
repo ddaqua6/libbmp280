@@ -1,4 +1,4 @@
-mport time
+import time
 from bmp280 import BMP280
 
 temperature_calibration = -0.77
