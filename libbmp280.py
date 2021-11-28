@@ -1,4 +1,4 @@
-import time
+mport time
 from bmp280 import BMP280
 
 temperature_calibration = -0.77
@@ -28,5 +28,8 @@ def raw_temperature(decimals=False):
 def raw_pressure(decimals=False):
     return zaokrouhlit(bmp280.get_pressure(), decimals)
 
-prvni_teplota = raw_temperature()
-prvni_tlak = raw_pressure()
+def initialization():
+  init_temp = raw_temperature()
+  init_press = raw_pressure()
+
+initialization()
