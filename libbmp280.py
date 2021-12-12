@@ -1,4 +1,7 @@
 import time
+import sys
+if sys.version_info[0] < 3:
+    raise Exception("Must be using Python 3")
 from bmp280 import BMP280
 
 temperature_calibration = -0.77
